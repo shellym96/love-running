@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Love running club for runners in Dublin, Ireland">
-    <meta name="keywords" content="love running, running club, dublin , ireland">
-    <link rel="stylesheet" href="assets/assets/css/style.css">
-    <title> Love Running</title>
-     <style>
-       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Sign in & Sign up Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
@@ -476,195 +473,242 @@ background-color:rgb(37, 104, 219);
 a{
   cursor: pointer;
 }
+:root {
+    --bg: rgb(137, 144, 158);
+    --bg-input: #141419;
+}
 
 
-        :root {
-            --bg: rgb(137, 144, 158);
-            --bg-input: #141419;
-        }
-        
-        
-        :root{
-            --bg: linear-gradient(to left, #33ccff 0%, #cc66ff 100%);
-           
-            --bg-input: #e1e1ed;
-        }
-        
-        
-        /* light mode edited */
-        
-        .light-mode {
-            --bg: linear-gradient(to left, #2a2d30, #080a0c);
-            --bg-input: #fcf9f9;
-        }
-        
-        body {
-            background: var(--bg);
-            color: var(--color-text);
-            /*font-weight: 500;
-            display: flex;*/
-        }
-        
-        .switch {
-            position: absolute;
-            margin-left: -9999px;
-            visibility: hidden;
-        }
-        
-        .switch+label {
-            display: block;
-            position: relative;
-            cursor: pointer;
-            outline: none;
-            user-select: none;
-        }
-        
-        .switch+label {
-            padding: 2px;
-            width: 52px;
-            height: 27px;
-            background-color: var(--color-border), rgba(23, 21, 21, 0.3);
-            border-radius: 100px;
-        }
-        
-        .switch+label:before,
-        .switch+label:after {
-            display: block;
-            position: absolute;
-            top: 1px;
-            left: 1px;
-            bottom: 1px;
-            content: "";
-        }
-        
-        .switch+label:before {
-            right: 1px;
-            background-color: var(--bg-input);
-            border-radius: 60px;
-            transition: all 0.4s;
-        }
-        
-        .switch+label:after {
-            width: 30px;
-            background-color: #fff;
-            border-radius: 100%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            transition: all 0.4s;
-        }
-        
-        .switch:checked+label:before {
-            background-color: #f3eff5;
-        }
-        
-        .switch:checked+label:after {
-            transform: translateX(30px);
-        }
-        @media (min-width: 360px) {
-            #switch{
-             color: #773caa;
+:root{
+    --bg: linear-gradient(to left, #33ccff 0%, #cc66ff 100%);
+   
+    --bg-input: #e1e1ed;
+}
 
-            }
-            .switchs{
-        
-                color: #773caa;
-  
 
-            }
+/* light mode edited */
 
-        }
-        @media (max-width: 760px) {
-            .switchs{
-              
+.light-mode {
+    --bg: linear-gradient(to left, #2a2d30, #080a0c);
+    --bg-input: #fcf9f9;
+}
 
-                color: #773caa;
+body {
+    background: var(--bg);
+    color: var(--color-text);
+    /*font-weight: 500;
+    display: flex;*/
+}
 
-            }
-            #switch{
-              
+.switch {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
 
-                color: #773caa;
+.switch+label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
 
-            }
+.switch+label {
+    padding: 2px;
+    width: 52px;
+    height: 27px;
+    background-color: var(--color-border), rgba(23, 21, 21, 0.3);
+    border-radius: 100px;
+}
 
-        }
+.switch+label:before,
+.switch+label:after {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: "";
+}
 
-        
-        
-        
-        </style> 
+.switch+label:before {
+    right: 1px;
+    background-color: var(--bg-input);
+    border-radius: 60px;
+    transition: all 0.4s;
+}
+
+.switch+label:after {
+    width: 30px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
+}
+
+.switch:checked+label:before {
+    background-color: #f3eff5;
+}
+
+.switch:checked+label:after {
+    transform: translateX(30px);
+}
+
+
+
+
+
+</style>
+
+    
 </head>
-
-<body style="color: aliceblue;">
-    <header>
-        <a href="index.html">
-            <h1 id="logo" style="color: aliceblue;">Love Running</h1>
-        </a>
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a href="/sign.html"> Sign Up</a>
-                </li>
-                <li>
-                    <a href="gallery.html" class="active">Gallery</a>
-                </li>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a style="color: aliceblue; font-size: 12px;  font-weight: bold; align-items: center; justify-content: center; display:flex;">Enable Dark mode</a>
-                <label for="switch" style="margin-top: -20px;">
-                  <input type="checkbox" id="switch" class="switch" style="margin-top: -20px; align-items: center; justify-content: center; display: flex;">
-                  <label for="switch" style="margin-top: -20px; align-items: center; justify-content: center; display: flex;"></label>
-            </label>
-            </li>
-            <script>
-                const $html = document.querySelector("html");
-                const $checkbox = document.querySelector("#switch");
-                
-                $checkbox.addEventListener("change", function() {
-                    $html.classList.toggle("light-mode");
-                });
-                </script>
-            </ul>
-        </nav>
-    </header>
-
-
-    <section id="photos">
-        <img src="assets/assets/images/athletes.jpg" alt="Two athletes running together">
-        <img src="assets/assets/images/girls.jpg" alt="Three girls running at a paint festival">
-        <img src="assets/assets/images/runner3.jpg" alt="Solo male running on a beach">
-        <img src="assets/assets/images/man.jpg" alt="Man at charity paint running festival">
-        <img src="assets/assets/images/runner1.jpg" alt="Solo female runner running through Pheonix Park">
-        <img src="assets/assets/images/runner2.jpg" alt="Runners competeing in a marathon">
-        <img src="assets/assets/images/runner4.jpg" alt="Solo female runner running on a beach">
-        <img src="assets/assets/images/running_gang.jpg" alt="Large group of runners taking part in a marathon on a rainy day">
-        <img src="assets/assets/images/mud-run.jpg" alt="Two women taking a muddy selfie after the Mud Runners Championship">
-       
-    </section>
-    <br>
-    <footer>
-        <div class="social-media">
-
-            <a href="https://www.github.com/" class="social-icon">
-              <i class="fa-brands fa-github"></i>
+  <body>
+    <div class="container">
+  
+      <div class="forms-container">
+     
+        <div class="signin-signup">
+   
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+     
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <a href="#" style="color: rgb(205, 197, 197);">Forget Password ?</a>
+            <p class="social-text" style="color: aliceblue ;">Join us in social media platforms</p>
+            <div class="social-media">
+              <a href="# " class="social-icon">
+                <i class="fa-brands fa-github fa-beat"></i>
+              </a>
+        
+              <a href="#" class="face">
+                <i class="fa-brands fa-facebook"></i>
               </a>
 
-             
-
-            <a href="https://www.facebook.com/" class="face">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
+              <a href="#" class="insta">
+                <i class="fa-brands fa-instagram fa-beat"></i>
+              </a>
+              <a href="#" class="linkedin">
+                <i class="fa-brands fa-linkedin fa-beat"></i>
+              </a>
+            </div>
+            <br>
             
-            <a href="https://www.instagram.com/" class="insta">
-              <i class="fa-brands fa-instagram" ></i>
-            </a>
-            <a href="https://www.linkedin.com/" class="linkedin">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/552664b17c.js" crossorigin="anonymous"></script>
-</body>
+            <h3 style="color:aliceblue; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; border-bottom: 2px solid aliceblue;">Enable Dark mode</h3>
+     
+            <br>
+            <label for="switch">
+              <input type="checkbox" id="switch" class="switch">
+              <label for="switch"></label>
+        </label>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <p class="social-text" style="color: aliceblue;">Join us in various  social media platforms</p>
+            <div class="social-media">
 
+              <a href="https://www.github.com/" class="social-icon">
+                <i class="fa-brands fa-github"></i>
+                </a>
+
+               
+
+              <a href="https://www.facebook.com/" class="face">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              
+              <a href="https://www.instagram.com/" class="insta">
+                <i class="fa-brands fa-instagram" ></i>
+              </a>
+              <a href="https://www.linkedin.com/" class="linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+            <br>
+            <br>
+            <h3 style="color:aliceblue; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; border-bottom: 2px solid aliceblue;">Enable Dark mode</h3>
+            <br>
+            <label for="switch">
+              <input type="text" id="switch" class="switch" >
+              <label for="switch"></label>
+        </label>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+              Sign Up......Here
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+      
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+             Login to continue your Sign In.....
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Login
+            </button>
+          </div>
+
+        </div>
+      </div>
+  
+    </div>
+    
+
+  <script>
+    const sign_in_btn = document.querySelector("#sign-in-btn");
+const sign_up_btn = document.querySelector("#sign-up-btn");
+const containers = document.querySelector(".container");
+
+sign_up_btn.addEventListener("click", () => {
+  containers.classList.add("sign-up-mode");
+});
+
+sign_in_btn.addEventListener("click", () => {
+  containers.classList.remove("sign-up-mode");
+});
+  </script>
+
+
+<script>
+const $html = document.querySelector("html");
+const $checkbox = document.querySelector("#switch");
+
+$checkbox.addEventListener("change", function() {
+    $html.classList.toggle("light-mode");
+});
+</script>
+  </body>
 </html>
